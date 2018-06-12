@@ -6,6 +6,8 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
 
 public class frmUemerson extends JFrame {
 
@@ -32,11 +34,15 @@ public class frmUemerson extends JFrame {
 	 */
 	public frmUemerson() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 571, 361);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblUemersonPinheiroJunior = new JLabel("Uemerson Pinheiro Junior");
+		lblUemersonPinheiroJunior.setFont(new Font("Tahoma", Font.PLAIN, 36));
+		lblUemersonPinheiroJunior.setBounds(10, 44, 495, 202);
+		contentPane.add(lblUemersonPinheiroJunior);
 	}
-
 }
