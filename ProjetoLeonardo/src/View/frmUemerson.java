@@ -9,10 +9,13 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JButton;
+import javax.swing.JTextField;
 
 public class frmUemerson extends JFrame {
 
 	private JPanel contentPane;
+	private JTextField textField;
+	private JTextField textField_1;
 
 	/**
 	 * Launch the application.
@@ -49,5 +52,23 @@ public class frmUemerson extends JFrame {
 		JButton btnTrcio_1 = new JButton("T\u00E9rcio2");
 		btnTrcio_1.setBounds(165, 254, 89, 23);
 		contentPane.add(btnTrcio_1);
+		
+		JLabel lblGustavo = new JLabel("Gustavo1");
+		lblGustavo.setBounds(30, 22, 46, 14);
+		contentPane.add(lblGustavo);
+		
+		JLabel lblGustavo_1 = new JLabel("Gustavo2");
+		lblGustavo_1.setBounds(30, 57, 46, 14);
+		contentPane.add(lblGustavo_1);
+		
+		textField = new JTextField();
+		textField.setBounds(86, 19, 86, 20);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(86, 54, 86, 20);
+		contentPane.add(textField_1);
+		textField_1.setColumns(10);
 	}
 }
