@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JButton;
 import javax.swing.JTextField;
+import javax.swing.JScrollBar;
 
 public class frmUemerson extends JFrame {
 
