@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
+import javax.swing.JButton;
 
 public class frmUemerson extends JFrame {
 
@@ -33,6 +34,7 @@ public class frmUemerson extends JFrame {
 	 * Create the frame.
 	 */
 	public frmUemerson() {
+		setTitle("Uemerson");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 571, 361);
 		contentPane = new JPanel();
@@ -40,9 +42,12 @@ public class frmUemerson extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblUemersonPinheiroJunior = new JLabel("Uemerson Pinheiro Junior");
-		lblUemersonPinheiroJunior.setFont(new Font("Tahoma", Font.PLAIN, 36));
-		lblUemersonPinheiroJunior.setBounds(10, 44, 495, 202);
-		contentPane.add(lblUemersonPinheiroJunior);
+		JButton btnTrcio = new JButton("T\u00E9rcio1");
+		btnTrcio.setBounds(10, 254, 89, 23);
+		contentPane.add(btnTrcio);
+		
+		JButton btnTrcio_1 = new JButton("T\u00E9rcio2");
+		btnTrcio_1.setBounds(165, 254, 89, 23);
+		contentPane.add(btnTrcio_1);
 	}
 }
